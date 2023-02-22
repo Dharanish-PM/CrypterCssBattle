@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "EthnocentricRg-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("EthnocentricRg-Regular"),
+    url("ethnocentric rg.woff") format("woff");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
+  font-family: "EthnocentricRg-Regular";
+  font-style: normal;
+  font-weight: 300;
 }
+body {
+  background-color: black;
+  background-image: url("./images/cryptera.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /*1fr 1fr eqaul separation*/
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.showcase {
+  height: 400px;
+  color: #fff;
+  position: relative;
+  padding: 10px 100px;
+}
+.showcase h1 {
+  font-size: 40px;
+}
+.showcase p {
+  margin: 20px 0;
+}
+.showcase .para {
+  font-size: 20px;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+  background: transparent;
+}
+.showcase .left {
+  animation: slidefromleft;
+  animation-duration: 2s;
+  font-size: 35px;
+}
+
+.right-form {
+  position: relative;
+  top: 1px;
+  height: 100%;
+  width: 70%;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slidefromright;
+  animation-duration: 2s;
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.right-form .form-control {
+  margin: 30px 0;
+}
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  border: 0;
+  border-bottom: 2px solid #b4becb;
+  width: 100%;
+  height: 38px;
+  padding: 3px;
+  font-size: 16px;
   color: white;
-}
 
-.App-link {
-  color: #61dafb;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input::placeholder {
+  color: whitesmoke;
+}
+.form-control input:focus {
+  outline: none; /*to remove the box when clicked*/
+  box-shadow: 1px 1px 10px grey;
+}
+.btn {
+  background: rgba(255, 255, 255, 0.12);
+  width: 100px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  height: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn:hover {
+  box-shadow: 1px 1px 10px grey;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .showcase .left {
+    position: relative;
+    text-align: center;
+  }
+  .right-form {
+    position: relative;
+    right: 80px;
+  }
+
+  .showcase {
+    height: auto;
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-left: 12px;
+}
+.icon:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.web {
+  font-size: 20px;
+}
+@keyframes slidefromleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slidefromright {
+  0% {
+    transform: translateX(+100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }

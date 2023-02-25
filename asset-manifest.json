@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CrypterCssBattle/static/css/main.0d1a41ad.css",
-    "main.js": "/CrypterCssBattle/static/js/main.aeabeb64.js",
-    "static/media/cryptera.png": "/CrypterCssBattle/static/media/cryptera.04832d44340149ae9ce1.png",
-    "static/media/ethnocentric rg.woff": "/CrypterCssBattle/static/media/ethnocentric rg.bf31d0af8759faf326a9.woff",
-    "index.html": "/CrypterCssBattle/index.html",
-    "main.0d1a41ad.css.map": "/CrypterCssBattle/static/css/main.0d1a41ad.css.map",
-    "main.aeabeb64.js.map": "/CrypterCssBattle/static/js/main.aeabeb64.js.map"
+    "main.css": "/static/css/main.ba0cdf0b.css",
+    "main.js": "/static/js/main.fd5da2d3.js",
+    "static/media/cryptera.png": "/static/media/cryptera.04832d44340149ae9ce1.png",
+    "static/media/ethnocentric rg.woff": "/static/media/ethnocentric rg.bf31d0af8759faf326a9.woff",
+    "index.html": "/index.html",
+    "main.ba0cdf0b.css.map": "/static/css/main.ba0cdf0b.css.map",
+    "main.fd5da2d3.js.map": "/static/js/main.fd5da2d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d1a41ad.css",
-    "static/js/main.aeabeb64.js"
+    "static/css/main.ba0cdf0b.css",
+    "static/js/main.fd5da2d3.js"
   ]
 }
